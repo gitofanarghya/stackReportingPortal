@@ -46,9 +46,6 @@ const styles = theme => ({
   },
   link: {
       color: 'unset'
-  },
-  heading: {
-    boxShadow: '0px 0px 5px 0px'
   }
 });
 
@@ -66,12 +63,13 @@ class Reports extends React.Component {
       const {classes} = this.props
 
     return (
-        <div>
-        <Typography variant="headline" component="h3" style={{paddingLeft: '10px'}}>
+        <Paper className={classes.root}>
+        <Typography variant="headline" component="h3" style={{padding: '10px'}}>
             REPORTS
           </Typography>
           <Table className={classes.table}>
-              <TableHead className={classes.heading}>
+          
+              <TableHead>
               <TableRow>
                   < CustomTableCell padding="none"><Typography variant="subheading"><InsertChartIcon variant='large'/>Report</Typography></ CustomTableCell>
                   < CustomTableCell padding="none"><Typography variant="subheading"><DateRangeIcon />Created on</Typography></ CustomTableCell>
@@ -162,7 +160,7 @@ class Reports extends React.Component {
                   </TableRow>
               </TableBody>
           </Table>
-          </div>
+          </Paper>
     );
   }
 }
