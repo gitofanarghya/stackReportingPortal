@@ -29,14 +29,14 @@ const Nav = (props) => {
               <Grid item xs={false} sm={false} md={5} className="logo-bg" onClick={() => history.push(`/`)}></Grid>
               <Grid item xs>
                 <Typography variant="display1" color="primary">
-                    Care Reporting Web portal
+                    Care Portal
                 </Typography>
               </Grid>
             </Grid>
 
             </Toolbar>            
         </AppBar>
-        <main className={classNames("container-column", "flex-item", "loginpic")}>
+        <main className={classNames("container-column", "flex-item")}>
             {children}
         </main>
     </div>

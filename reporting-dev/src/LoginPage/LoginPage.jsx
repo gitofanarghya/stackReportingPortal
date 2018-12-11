@@ -58,7 +58,7 @@ class LoginPage extends React.Component {
         const { loggingIn, classes } = this.props;
         return ( loggingIn ? <Loading /> :
             <div style={{height: '100%'}}><NavBar>
-            <Grid className="loginpic" container direction="row" justify="center" alignItems='center' style={{height: '100%'}}>
+            <Grid className="loginpic" container direction="row" justify="center" alignItems='center' style={{flexGrow: 1}}>
               
               <Grid md={3} sm={6} xs={10} item>
               <Card className={classes.card}>
