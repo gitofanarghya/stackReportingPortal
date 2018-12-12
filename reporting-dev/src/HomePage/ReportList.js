@@ -115,15 +115,6 @@ class Reports extends React.Component {
                   <TableRow hover className={classes.row}>
                       < TableCell component="th" scope="row" padding="none">
                           <Typography variant="body1">
-                              Unit Activity Weekly : Oct 19 - Nov 25
-                          </Typography>    
-                      </ TableCell>
-                      < CustomTableCell padding="none"> Nov 26 2018 </ CustomTableCell>
-                      < CustomTableCell padding="none"><a className={classes.link} href={unit_activity_weekly2} download=""><FileDownloadIcon/></a></ CustomTableCell>
-                  </TableRow>
-                  <TableRow hover className={classes.row}>
-                      < TableCell component="th" scope="row" padding="none">
-                          <Typography variant="body1">
                               Unit Activity Weekly : Oct 29 - Nov 04
                           </Typography>    
                       </ TableCell>
@@ -170,3 +161,18 @@ Reports.propTypes = {
 
 
 export const ReportsList = withStyles(styles)(Reports)
+
+
+
+/*
+
+                  <TableRow hover className={classes.row}>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                              Unit Activity Weekly : Oct 19 - Nov 25
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"> Nov 26 2018 </ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={unit_activity_weekly2} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  */
