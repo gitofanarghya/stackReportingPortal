@@ -25,7 +25,7 @@ export class HomePage extends React.Component {
     ]
         
         return(
-            <NavBar>
+            <NavBar logout={true}>
                 <Grid container justify="flex-start">
                     <Grid container item xs={12} justify="space-around" style={{height: '100px'}}>
                         <Grid item xs={11} sm={10} md={8} lg={6} style={{margin: 'auto'}}>
@@ -33,7 +33,7 @@ export class HomePage extends React.Component {
                         </Grid>
                     </Grid>
                     <Grid container item xs={12} direction='row' justify='space-around'>
-                        <Grid item xs={11} sm={10} md={9} lg={8} style={{marginBottom: '29px'}}>
+                        <Grid item xs={11} sm={10} md={9} lg={8} style={{marginBottom: '19px'}}>
                             <ReportsList />
                         </Grid>
                     </Grid>

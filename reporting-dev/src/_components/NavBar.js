@@ -18,8 +18,14 @@ const styles = {
   }
 };
 
+const logOut = () => {
+  localStorage.removeItem('user')
+  window.location.reload(true)
+}
+
 const Nav = (props) => {
   const { classes, children } = props;
+
   return (
   
     <div className={classNames(classes.root, "container-column", "flex-item", "h100")}>
@@ -32,6 +38,10 @@ const Nav = (props) => {
                     Care Portal
                 </Typography>
               </Grid>
+              { props.logout && 
+              <Grid item>
+                <Button variant='contained' onClick={logOut}>Logout</Button>
+              </Grid> }
             </Grid>
 
             </Toolbar>            

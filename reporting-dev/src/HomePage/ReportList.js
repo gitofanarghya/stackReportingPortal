@@ -27,7 +27,6 @@ const CustomTableCell = withStyles(theme => ({
       backgroundColor: theme.palette.common.white,
       color: theme.palette.common.black,
       textAlign: 'center',
-
     },
     body: {
         textAlign: 'center'
@@ -37,7 +36,7 @@ const CustomTableCell = withStyles(theme => ({
 const styles = theme => ({
   root: {
     width: '100%',
-    height: '530px',
+    height: '540px',
     overflow: 'auto',
   },
   table: {
@@ -64,97 +63,97 @@ class Reports extends React.Component {
 
     return (
         <Paper className={classes.root}>
-        <Typography variant="headline" component="h3" style={{padding: '10px'}}>
+        <Typography variant="headline" component="h3" style={{paddingLeft: '10px'}}>
             REPORTS
           </Typography>
           <Table className={classes.table}>
           
               <TableHead>
               <TableRow>
-                  < CustomTableCell padding="none"><Typography variant="subheading"><InsertChartIcon variant='large'/>Report</Typography></ CustomTableCell>
-                  < CustomTableCell padding="none"><Typography variant="subheading"><DateRangeIcon />Created on</Typography></ CustomTableCell>
-                  < CustomTableCell padding="none"><Typography variant="subheading">Download </Typography></ CustomTableCell>
+                  < TableCell padding="none"><Typography variant="h5">Report</Typography></ TableCell>
+                  < CustomTableCell padding="none"><Typography variant="h5">Created on</Typography></ CustomTableCell>
+                  < CustomTableCell padding="none"><Typography variant="h5">Download </Typography></ CustomTableCell>
               </TableRow>
               </TableHead>
               <TableBody>
                   <TableRow hover className={classes.row}>
-                      < CustomTableCell component="th" scope="row" padding="none">
+                      < TableCell component="th" scope="row" padding="none">
                           <Typography variant="body1">
-                              Event Report Weekly : Nov 25 - Dec 02
+                              Unit Activity Weekly : Nov 26 - Dec 02
                           </Typography>    
-                      </ CustomTableCell>
+                      </ TableCell>
                       < CustomTableCell padding="none"> Dec 03 2018 </ CustomTableCell>
                       < CustomTableCell padding="none"><a className={classes.link} href={unit_activity_weekly3} download=""><FileDownloadIcon/></a></ CustomTableCell>
                   </TableRow>
                   <TableRow hover className={classes.row}>
-                      < CustomTableCell component="th" scope="row" padding="none">
+                      < TableCell component="th" scope="row" padding="none">
                           <Typography variant="body1">
                               Unit Activity Monthly : Nov 01 - Nov 30
                           </Typography>    
-                      </ CustomTableCell>
+                      </ TableCell>
                       < CustomTableCell padding="none"> Dec 01 2018 </ CustomTableCell>
                       < CustomTableCell padding="none"><a className={classes.link} href={unit_activity_monthly2} download=""><FileDownloadIcon/></a></ CustomTableCell>
                   </TableRow>
                   <TableRow hover className={classes.row}>
-                      < CustomTableCell component="th" scope="row" padding="none">
+                      < TableCell component="th" scope="row" padding="none">
                           <Typography variant="body1">
-                              Event Report Monthly : Nov 01 - Nov 30
+                              Event Detail Monthly : Nov 01 - Nov 30
                           </Typography>    
-                      </ CustomTableCell>
+                      </ TableCell>
                       < CustomTableCell padding="none"> Dec 01 2018 </ CustomTableCell>
                       < CustomTableCell padding="none"><a className={classes.link} href={event_detail_monthly2} download=""><FileDownloadIcon/></a></ CustomTableCell>
                   </TableRow>
                   <TableRow hover className={classes.row}>
-                      < CustomTableCell component="th" scope="row" padding="none">
+                      < TableCell component="th" scope="row" padding="none">
                           <Typography variant="body1">
-                              Event Report Weekly : Nov 19 - Nov 25
+                              Event Detail Weekly : Nov 19 - Nov 25
                           </Typography>    
-                      </ CustomTableCell>
+                      </ TableCell>
                       < CustomTableCell padding="none"> Nov 26 2018 </ CustomTableCell>
                       < CustomTableCell padding="none"><a className={classes.link} href={event_detail_weekly2} download=""><FileDownloadIcon/></a></ CustomTableCell>
                   </TableRow>
                   <TableRow hover className={classes.row}>
-                      < CustomTableCell component="th" scope="row" padding="none">
+                      < TableCell component="th" scope="row" padding="none">
                           <Typography variant="body1">
-                              Event Report Weekly : Oct 19 - Nov 25
+                              Unit Activity Weekly : Oct 19 - Nov 25
                           </Typography>    
-                      </ CustomTableCell>
+                      </ TableCell>
                       < CustomTableCell padding="none"> Nov 26 2018 </ CustomTableCell>
                       < CustomTableCell padding="none"><a className={classes.link} href={unit_activity_weekly2} download=""><FileDownloadIcon/></a></ CustomTableCell>
                   </TableRow>
                   <TableRow hover className={classes.row}>
-                      < CustomTableCell component="th" scope="row" padding="none">
+                      < TableCell component="th" scope="row" padding="none">
                           <Typography variant="body1">
-                              Event Report Weekly : Oct 29 - Nov 04
+                              Unit Activity Weekly : Oct 29 - Nov 04
                           </Typography>    
-                      </ CustomTableCell>
+                      </ TableCell>
                       < CustomTableCell padding="none"> Nov 05 2018 </ CustomTableCell>
                       < CustomTableCell padding="none"><a className={classes.link} href={event_detail_weekly} download=""><FileDownloadIcon/></a></ CustomTableCell>
                   </TableRow>
                   <TableRow hover className={classes.row}>
-                      < CustomTableCell component="th" scope="row" padding="none">
+                      < TableCell component="th" scope="row" padding="none">
                           <Typography variant="body1">
-                              Event Report Weekly : Oct 29 - Nov 04
+                              Event Detail Weekly : Oct 29 - Nov 04
                           </Typography>    
-                      </ CustomTableCell>
+                      </ TableCell>
                       < CustomTableCell padding="none"> Nov 05 2018 </ CustomTableCell>
                       < CustomTableCell padding="none"><a className={classes.link} href={unit_activity_weekly} download=""><FileDownloadIcon/></a></ CustomTableCell>
                   </TableRow>
                   <TableRow hover className={classes.row}>
-                      < CustomTableCell component="th" scope="row" padding="none">
+                      < TableCell component="th" scope="row" padding="none">
                           <Typography variant="body1">
-                              Event Report Monthly : Oct 01 - Nov 01
+                              Unit Activity Monthly : Oct 01 - Nov 01
                           </Typography>    
-                      </ CustomTableCell>
+                      </ TableCell>
                       < CustomTableCell padding="none"> Nov 01 2018 </ CustomTableCell>
                       < CustomTableCell padding="none"><a className={classes.link} href={event_detail_monthly} download=""><FileDownloadIcon/></a></ CustomTableCell>
                   </TableRow>
                   <TableRow hover className={classes.row}>
-                      < CustomTableCell component="th" scope="row" padding="none">
+                      < TableCell component="th" scope="row" padding="none">
                           <Typography variant="body1">
-                              Unit Activity Monthly : Oct 01 - Nov 01
+                              Event Detail Monthly : Oct 01 - Nov 01
                           </Typography>    
-                      </ CustomTableCell>
+                      </ TableCell>
                       < CustomTableCell padding="none"> Nov 01 2018 </ CustomTableCell>
                       < CustomTableCell padding="none"><a className={classes.link} href={unit_activity_monthly} download=""><FileDownloadIcon/></a></ CustomTableCell>
                   </TableRow>
