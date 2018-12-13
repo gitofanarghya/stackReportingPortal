@@ -18,4 +18,4 @@ app.get('/*', function (req, res) {
 
 var httpsServer = https.createServer(credentials, app);
 
-httpsServer.listen(8080);
+httpsServer.listen(443);
