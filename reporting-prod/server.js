@@ -20,4 +20,4 @@ app.get('/*', function (req, res) {
 var httpsServer = https.createServer(credentials, app);
 var httpServer = http.createServer(app);
 httpServer.listen(80)
-httpsServer.listen(8080);
+httpsServer.listen(443);
