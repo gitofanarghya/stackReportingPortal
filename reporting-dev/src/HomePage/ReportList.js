@@ -21,6 +21,15 @@ import unit_activity_weekly from './reports/unit_activity_weekly.dajpqmxj78mpvo7
 import unit_activity_weekly2 from './reports/unit_activity_weekly.dajpqmxj78mpvo7b8beejpgk8jbvp.2018w47.pdf'
 import unit_activity_weekly3 from './reports/unit_activity_weekly.dajpqmxj78mpvo7b8beejpgk8jbvp.2018w48.pdf'
 
+import parc_motion_unit_weekly from './reports/PARC unit motion weekly 2018-Dec-31.pdf'
+import parc_motion_unit_weekly2 from './reports/PARC unit motion weekly 2018-Dec-24.pdf'
+import parc_motion_unit_weekly3 from './reports/PARC unit motion weekly 2018-Dec-17.pdf'
+import parc_motion_unit_weekly4 from './reports/PARC unit motion weekly 2018-Dec-10.pdf'
+import parc_motion_stairwell_weekly from './reports/PARC stairwell weekly 2018-Dec-31.pdf'
+import parc_motion_stairwell_weekly2 from './reports/PARC stairwell weekly 2018-Dec-24.pdf'
+import parc_motion_stairwell_weekly3 from './reports/PARC stairwell weekly 2018-Dec-17.pdf'
+import parc_motion_stairwell_weekly4 from './reports/PARC stairwell weekly 2018-Dec-10.pdf'
+
 
 const CustomTableCell = withStyles(theme => ({
     head: {
@@ -70,7 +79,7 @@ class Reports extends React.Component {
           
               <TableHead>
               <TableRow>
-                  < TableCell padding="none"><Typography variant="h5">Report</Typography></ TableCell>
+                  < TableCell padding="none"><Typography variant="h5">Name</Typography></ TableCell>
                   < CustomTableCell padding="none"><Typography variant="h5">Created on</Typography></ CustomTableCell>
                   < CustomTableCell padding="none"><Typography variant="h5">Download </Typography></ CustomTableCell>
               </TableRow>
@@ -79,74 +88,74 @@ class Reports extends React.Component {
                   <TableRow hover className={classes.row}>
                       < TableCell component="th" scope="row" padding="none">
                           <Typography variant="body1">
-                              Unit Activity Weekly : Nov 26 - Dec 02
+                            PARC Stairwell Weekly 2018-Dec-31
                           </Typography>    
                       </ TableCell>
-                      < CustomTableCell padding="none"> Dec 03 2018 </ CustomTableCell>
-                      < CustomTableCell padding="none"><a className={classes.link} href={unit_activity_weekly3} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                      < CustomTableCell padding="none"> 2018 Dec 31 </ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={parc_motion_stairwell_weekly} download=""><FileDownloadIcon/></a></ CustomTableCell>
                   </TableRow>
                   <TableRow hover className={classes.row}>
                       < TableCell component="th" scope="row" padding="none">
                           <Typography variant="body1">
-                              Unit Activity Monthly : Nov 01 - Nov 30
+                          PARC Stairwell Weekly 2018-Dec-24
                           </Typography>    
                       </ TableCell>
-                      < CustomTableCell padding="none"> Dec 01 2018 </ CustomTableCell>
-                      < CustomTableCell padding="none"><a className={classes.link} href={unit_activity_monthly2} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                      < CustomTableCell padding="none"> 2018 Dec 24 </ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={parc_motion_stairwell_weekly2} download=""><FileDownloadIcon/></a></ CustomTableCell>
                   </TableRow>
                   <TableRow hover className={classes.row}>
                       < TableCell component="th" scope="row" padding="none">
                           <Typography variant="body1">
-                              Event Detail Monthly : Nov 01 - Nov 30
+                          PARC Stairwell Weekly 2018-Dec-17
                           </Typography>    
                       </ TableCell>
-                      < CustomTableCell padding="none"> Dec 01 2018 </ CustomTableCell>
-                      < CustomTableCell padding="none"><a className={classes.link} href={event_detail_monthly2} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                      < CustomTableCell padding="none"> 2018 Dec 17 </ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={parc_motion_stairwell_weekly3} download=""><FileDownloadIcon/></a></ CustomTableCell>
                   </TableRow>
                   <TableRow hover className={classes.row}>
                       < TableCell component="th" scope="row" padding="none">
                           <Typography variant="body1">
-                              Event Detail Weekly : Nov 19 - Nov 25
+                          PARC Stairwell Weekly 2018-Dec-10
                           </Typography>    
                       </ TableCell>
-                      < CustomTableCell padding="none"> Nov 26 2018 </ CustomTableCell>
-                      < CustomTableCell padding="none"><a className={classes.link} href={event_detail_weekly2} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                      < CustomTableCell padding="none"> 2018 Dec 10 </ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={parc_motion_stairwell_weekly4} download=""><FileDownloadIcon/></a></ CustomTableCell>
                   </TableRow>
                   <TableRow hover className={classes.row}>
                       < TableCell component="th" scope="row" padding="none">
                           <Typography variant="body1">
-                              Unit Activity Weekly : Oct 29 - Nov 04
+                          PARC Unit Motion Weekly 2018-Dec-31 
                           </Typography>    
                       </ TableCell>
-                      < CustomTableCell padding="none"> Nov 05 2018 </ CustomTableCell>
-                      < CustomTableCell padding="none"><a className={classes.link} href={event_detail_weekly} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                      < CustomTableCell padding="none"> 2018 Dec 31 </ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={parc_motion_unit_weekly} download=""><FileDownloadIcon/></a></ CustomTableCell>
                   </TableRow>
                   <TableRow hover className={classes.row}>
                       < TableCell component="th" scope="row" padding="none">
                           <Typography variant="body1">
-                              Event Detail Weekly : Oct 29 - Nov 04
+                          PARC Unit Motion Weekly 2018-Dec-24
                           </Typography>    
                       </ TableCell>
-                      < CustomTableCell padding="none"> Nov 05 2018 </ CustomTableCell>
-                      < CustomTableCell padding="none"><a className={classes.link} href={unit_activity_weekly} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                      < CustomTableCell padding="none"> 2018 Dec 24 </ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={parc_motion_unit_weekly2} download=""><FileDownloadIcon/></a></ CustomTableCell>
                   </TableRow>
                   <TableRow hover className={classes.row}>
                       < TableCell component="th" scope="row" padding="none">
                           <Typography variant="body1">
-                              Unit Activity Monthly : Oct 01 - Nov 01
+                          PARC Unit Motion Weekly 2018-Dec-17
                           </Typography>    
                       </ TableCell>
-                      < CustomTableCell padding="none"> Nov 01 2018 </ CustomTableCell>
-                      < CustomTableCell padding="none"><a className={classes.link} href={event_detail_monthly} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                      < CustomTableCell padding="none"> 2018 Dec 17 </ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={parc_motion_unit_weekly3} download=""><FileDownloadIcon/></a></ CustomTableCell>
                   </TableRow>
                   <TableRow hover className={classes.row}>
                       < TableCell component="th" scope="row" padding="none">
                           <Typography variant="body1">
-                              Event Detail Monthly : Oct 01 - Nov 01
+                          PARC Unit Motion Weekly 2018-Dec-10
                           </Typography>    
                       </ TableCell>
-                      < CustomTableCell padding="none"> Nov 01 2018 </ CustomTableCell>
-                      < CustomTableCell padding="none"><a className={classes.link} href={unit_activity_monthly} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                      < CustomTableCell padding="none"> 2018 Dec 10 </ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={parc_motion_unit_weekly4} download=""><FileDownloadIcon/></a></ CustomTableCell>
                   </TableRow>
               </TableBody>
           </Table>
