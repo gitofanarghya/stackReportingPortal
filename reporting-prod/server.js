@@ -3,6 +3,7 @@ const path = require('path');
 
 var fs = require('fs');
 var https = require('https');
+var http = require('hhtp'); 
 var privateKey  = fs.readFileSync('stackapis20180917.key', 'utf8');
 var certificate = fs.readFileSync('stackapis20180917.crt', 'utf8');
 var credentials = {key: privateKey, cert: certificate};
@@ -17,5 +18,6 @@ app.get('/*', function (req, res) {
 });
 
 var httpsServer = https.createServer(credentials, app);
-
-httpsServer.listen(80);
+var httpServer = http.createServer(app);
+httpServer.listen(80)
+httpsServer.listen(8080);
