@@ -4,8 +4,8 @@ const path = require('path');
 var fs = require('fs');
 var https = require('https');
 var http = require('http'); 
-var privateKey  = fs.readFileSync('stackapis20180917.key', 'utf8');
-var certificate = fs.readFileSync('stackapis20180917.crt', 'utf8');
+var privateKey  = fs.readFileSync('stackcare.key', 'utf8');
+var certificate = fs.readFileSync('STAR_stack_care.combined.crt', 'utf8');
 var credentials = {key: privateKey, cert: certificate};
 
 
