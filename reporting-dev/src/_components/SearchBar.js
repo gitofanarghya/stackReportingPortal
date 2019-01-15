@@ -40,8 +40,8 @@ class IntegrationReactSelect extends Component {
     const { classes } = this.props;
 
     const allCommunities = [{
-        id: '1',
-        name: 'PARC Westerleigh'
+       /* id: '1',
+        name: 'PARC Westerleigh'*/
     }]
 
     const suggestions = allCommunities ? allCommunities.map(suggestion => ({
@@ -56,7 +56,7 @@ class IntegrationReactSelect extends Component {
             className="searchBar"
             isClearable
             isSearchable
-            placeholder="PARC Westerleigh"
+            placeholder="Select a Community"
             options={suggestions}
             styles={customStyles}
             onChange={this.handleChange}
