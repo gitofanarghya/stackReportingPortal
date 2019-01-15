@@ -6,7 +6,8 @@ import { history } from '../_helpers';
 export const userActions = {
     login,
     logout,
-    register
+    register,
+    accessCheck
 };
 
 function login(username, password) {
@@ -17,7 +18,7 @@ function login(username, password) {
             .then(
                 user => { 
                     dispatch(success(user));
-                    dispatch(accessCheck())
+                    history.push('/')
                 },
                 error => {
                     dispatch(failure(error.toString()));
@@ -65,7 +66,6 @@ function accessCheck() {
             .then(
                 communities => {
                     dispatch(setAccess(communities))
-                    history.push('/')
                 },
                 error => {
                     dispatch(failure(error.toString()));

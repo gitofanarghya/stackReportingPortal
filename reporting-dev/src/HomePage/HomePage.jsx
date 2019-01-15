@@ -7,13 +7,14 @@ import classNames from 'classnames';
 import { Paper } from '@material-ui/core';
 import { SearchBar } from '../_components/SearchBar';
 import { ReportsList } from './ReportList';
+import { userActions } from '../_actions';
 
 
 class HomePage extends React.Component {
     
 
     componentDidMount() {
-        
+        this.props.accessCheck()
     }
 
     render() {
@@ -49,6 +50,11 @@ function mapStateToProps(state) {
     };
 }
 
+const mapDispatchToProps = (dispatch) => ({
+    accessCheck: () => {
+        dispatch(userActions.accessCheck())
+    },
+})
 
-const connectedHomePage = connect(mapStateToProps)(HomePage);
+const connectedHomePage = connect(mapStateToProps, mapDispatchToProps)(HomePage);
 export { connectedHomePage as HomePage }; 
