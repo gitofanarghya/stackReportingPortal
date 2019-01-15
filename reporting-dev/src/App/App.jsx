@@ -11,7 +11,6 @@ import { LoginPage } from '../LoginPage';
 class App extends React.Component {
     
     render() {
-        console.log()
         return ( 
             <Router history={history}>
                 <div className="h100">

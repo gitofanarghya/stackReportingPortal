@@ -43,7 +43,6 @@ const CustomTableCell = withStyles(theme => ({
 const styles = theme => ({
   root: {
     width: '100%',
-    height: '540px',
     overflow: 'auto',
   },
   table: {
