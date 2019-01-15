@@ -13,7 +13,7 @@ class App extends React.Component {
     render() {
         return ( 
             <Router history={history}>
-                <div className="h100">
+                <div className={this.props.loggedIn ? "h100" : "h-100"} >
                 <Switch>
                     <Route exact path="/login" component={LoginPage} />
                     <PrivateRoute exact path="/" component={HomePage} refreshed={this.props.refreshed} />

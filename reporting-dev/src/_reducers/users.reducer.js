@@ -2,7 +2,7 @@ import { userConstants } from '../_constants';
 
 
 let user = JSON.parse(localStorage.getItem('user'));
-const initialState = user ? { loggedIn: true, user, refreshed: true, refreshing: false, access: false } : {loggedIn: false, user: null, refreshed: true, refreshing: false, access: false };
+const initialState = user ? { loggedIn: true, user, refreshed: true, refreshing: false, access: false, checkingAccess: true } : {loggedIn: false, user: null, refreshed: true, refreshing: false, access: false, checkingAccess: true };
 
 export function authentication(state, action) {
   if (typeof state === 'undefined') {
@@ -13,7 +13,10 @@ export function authentication(state, action) {
       return {
         ...state,
         loggingIn: true,
-        user: action.user
+        user: action.user,
+        refreshed: true,
+        refreshing: false,
+        checkingAccess: true
       };
     case userConstants.LOGIN_SUCCESS:
       return {
@@ -21,7 +24,8 @@ export function authentication(state, action) {
         loggedIn: true,
         user: action.user,
         refreshed: true,
-        refreshing: false
+        refreshing: false,
+        checkingAccess: true
       };
     case userConstants.LOGIN_FAILURE:
       return {};
@@ -41,14 +45,15 @@ export function authentication(state, action) {
       return {};
     case userConstants.LOGOUT:
       return {
-        ...state,loggedIn: false, user: null, refreshed: true, refreshing: false 
+        ...state,loggedIn: false, user: null, refreshed: true, refreshing: false, checkingAccess: true 
       };
     case userConstants.SETACCESS:
       return {
         ...state,
         access: action.communities.find(c => c.name === 'PARC Living Westerleigh') === undefined ? false : true,
         refreshed: true,
-        refreshing: false
+        refreshing: false,
+        checkingAccess: false
       }
     default:
       return state

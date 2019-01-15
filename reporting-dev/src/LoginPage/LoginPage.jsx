@@ -11,6 +11,9 @@ import CardMedia from '@material-ui/core/CardMedia';
 import { NavBar, Loading } from '../_components';
 import Grid from '@material-ui/core/Grid';
 import classNames from 'classnames';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
 
 const styles = {
     card: {
@@ -57,7 +60,22 @@ class LoginPage extends React.Component {
     render() {
         const { loggingIn, classes } = this.props;
         return ( loggingIn ? <Loading /> :
-            <div style={{height: '100%'}}><NavBar logout={false}>
+            <div style={{height: '100%'}}>
+            <AppBar className={classes.AppBar} position="static" color="secondary">
+            <Toolbar>
+            <Grid container justify="space-between" alignItems='center' style={{height: '64px'}}>
+              <Grid item xs={false} sm={false} md={2} className="logo-bg"></Grid>
+              <Grid item>
+                <Typography variant="display1" color="primary">
+                    Care Portal
+                </Typography>
+              </Grid>
+              <Grid item md={2} style={{ display: 'flex', justifyContent: 'center'}}>
+              </Grid> 
+            </Grid>
+
+            </Toolbar>            
+        </AppBar>
             <Grid className="loginpic" container direction="row" justify="center" alignItems='center' style={{flexGrow: 1}}>
               
               <Grid md={3} sm={6} xs={10} item>
@@ -103,7 +121,7 @@ class LoginPage extends React.Component {
                 <div>
                 </div>
               </Grid>
-            </Grid></NavBar>
+            </Grid>
             </div>       
         
         )

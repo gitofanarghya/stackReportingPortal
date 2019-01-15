@@ -23,7 +23,7 @@ class HomePage extends React.Component {
         "PARC"
     ]
         
-        return(
+        return( this.props.checkingAccess ? <center> Logged in successfully, retrieving reports... </center>  : 
             <NavBar logout={true}>
                 <Grid container justify="flex-start">
                     <Grid container item xs={12} justify="space-around" style={{height: '100px'}}>
@@ -44,9 +44,10 @@ class HomePage extends React.Component {
 
 
 function mapStateToProps(state) {
-    const { access } = state.authentication;
+    const { access, checkingAccess } = state.authentication;
     return {
-        access
+        access,
+        checkingAccess
     };
 }
 
