@@ -27,12 +27,12 @@ class HomePage extends React.Component {
                 <Grid container justify="flex-start">
                     <Grid container item xs={12} justify="space-around" style={{height: '100px'}}>
                         <Grid item xs={11} sm={10} md={8} lg={6} style={{margin: 'auto'}}>
-                            <SearchBar allCommunities={allCommunities} setCommunity={this.props.setCommunity} />
+                            { this.props.access && <SearchBar allCommunities={allCommunities} setCommunity={this.props.setCommunity} /> }
                         </Grid>
                     </Grid>
                     <Grid container item xs={12} direction='row' justify='space-around'>
                         <Grid item xs={11} sm={10} md={9} lg={8} style={{marginBottom: '19px'}}>
-                            <ReportsList access={this.props.access}/>
+                            <ReportsList access={this.props.access} />
                         </Grid>
                     </Grid>
                 </Grid> 

@@ -72,7 +72,7 @@ class Reports extends React.Component {
       const {classes, access} = this.props
 
     return (
-        !access ? 'No reports to show' :  
+        !access ? <center>'No reports to show'</center> :  
         <Paper className={classes.root}>
         <Typography variant="headline" component="h3" style={{paddingLeft: '10px'}}>
             REPORTS
