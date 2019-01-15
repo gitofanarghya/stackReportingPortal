@@ -9,7 +9,7 @@ import { SearchBar } from '../_components/SearchBar';
 import { ReportsList } from './ReportList';
 
 
-export class HomePage extends React.Component {
+class HomePage extends React.Component {
     
 
     componentDidMount() {
@@ -19,9 +19,7 @@ export class HomePage extends React.Component {
     render() {
 
     const allCommunities = [
-        "PARC",
-        "Sunnyview",
-        "Eskaton"
+        "PARC"
     ]
         
         return(
@@ -34,7 +32,7 @@ export class HomePage extends React.Component {
                     </Grid>
                     <Grid container item xs={12} direction='row' justify='space-around'>
                         <Grid item xs={11} sm={10} md={9} lg={8} style={{marginBottom: '19px'}}>
-                            <ReportsList />
+                            <ReportsList access={this.props.access}/>
                         </Grid>
                     </Grid>
                 </Grid> 
@@ -42,3 +40,15 @@ export class HomePage extends React.Component {
         )
     }
 }
+
+
+function mapStateToProps(state) {
+    const { access } = state.authentication;
+    return {
+        access
+    };
+}
+
+
+const connectedHomePage = connect(mapStateToProps)(HomePage);
+export { connectedHomePage as HomePage }; 

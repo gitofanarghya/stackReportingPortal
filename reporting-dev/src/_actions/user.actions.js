@@ -17,7 +17,7 @@ function login(username, password) {
             .then(
                 user => { 
                     dispatch(success(user));
-                    history.push('/');
+                    dispatch(accessCheck())
                 },
                 error => {
                     dispatch(failure(error.toString()));
@@ -57,4 +57,23 @@ function register(user) {
     function request(user) { return { type: userConstants.REGISTER_REQUEST, user } }
     function success(user) { return { type: userConstants.REGISTER_SUCCESS, user } }
     function failure(error) { return { type: userConstants.REGISTER_FAILURE, error } }
+}
+
+function accessCheck() {
+    return dispatch => {
+        userService.accessCheck()
+            .then(
+                communities => {
+                    dispatch(setAccess(communities))
+                    history.push('/')
+                },
+                error => {
+                    dispatch(failure(error.toString()));
+                    dispatch(alertActions.error(error.toString()));
+                }
+            )
+    }
+
+    function setAccess(communities) { return { type: userConstants.SETACCESS, communities } }
+    function failure(error) { return { type: userConstants.LOGIN_FAILURE, error } }
 }

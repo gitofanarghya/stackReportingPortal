@@ -12,4 +12,6 @@ export const userConstants = {
     REFRESH_FAILURE: 'USERS_REFRESH_FAILURE',
     
     LOGOUT: 'USERS_LOGOUT',
+
+    SETACCESS: 'SETACCESS',
 };

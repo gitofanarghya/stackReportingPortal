@@ -11,24 +11,22 @@ import Typography from '@material-ui/core/Typography'
 import FileDownloadIcon from '@material-ui/icons/FileDownload'
 import InsertChartIcon from '@material-ui/icons/InsertChart'
 import DateRangeIcon from '@material-ui/icons/DateRange'
-import event_detail_monthly from './reports/event_detail_monthly.dajpqmxj78mpvo7b8beejpgk8jbvp.201810.pdf'
-import event_detail_monthly2 from './reports/event_detail_monthly.dajpqmxj78mpvo7b8beejpgk8jbvp.201811.pdf'
-import event_detail_weekly from './reports/event_detail_weekly.dajpqmxj78mpvo7b8beejpgk8jbvp.2018w44.pdf'
-import event_detail_weekly2 from './reports/event_detail_weekly.dajpqmxj78mpvo7b8beejpgk8jbvp.2018w47.pdf'
-import unit_activity_monthly from './reports/unit_activity_monthly.dajpqmxj78mpvo7b8beejpgk8jbvp.201810.pdf'
-import unit_activity_monthly2 from './reports/unit_activity_monthly.dajpqmxj78mpvo7b8beejpgk8jbvp.201811.pdf'
-import unit_activity_weekly from './reports/unit_activity_weekly.dajpqmxj78mpvo7b8beejpgk8jbvp.2018w44.pdf'
-import unit_activity_weekly2 from './reports/unit_activity_weekly.dajpqmxj78mpvo7b8beejpgk8jbvp.2018w47.pdf'
-import unit_activity_weekly3 from './reports/unit_activity_weekly.dajpqmxj78mpvo7b8beejpgk8jbvp.2018w48.pdf'
-
-import parc_motion_unit_weekly from './reports/PARC unit motion weekly 2018-Dec-31.pdf'
-import parc_motion_unit_weekly2 from './reports/PARC unit motion weekly 2018-Dec-24.pdf'
-import parc_motion_unit_weekly3 from './reports/PARC unit motion weekly 2018-Dec-17.pdf'
-import parc_motion_unit_weekly4 from './reports/PARC unit motion weekly 2018-Dec-10.pdf'
-import parc_motion_stairwell_weekly from './reports/PARC stairwell weekly 2018-Dec-31.pdf'
-import parc_motion_stairwell_weekly2 from './reports/PARC stairwell weekly 2018-Dec-24.pdf'
-import parc_motion_stairwell_weekly3 from './reports/PARC stairwell weekly 2018-Dec-17.pdf'
-import parc_motion_stairwell_weekly4 from './reports/PARC stairwell weekly 2018-Dec-10.pdf'
+import Analytics_Monthly_414_2018_Dec from './reports/Analytics Monthly-414-2018-Dec.pdf'
+import Analytics_Monthly_414_2018_Nov from './reports/Analytics Monthly-414-2018-Nov.pdf'
+import Analytics_Monthly_414_2019_Jan from './reports/Analytics Monthly-414-2019-Jan.pdf'
+import Analytics_Monthly_610_2018_Dec from './reports/Analytics Monthly-610-2018-Dec.pdf'
+import Analytics_Monthly_610_2018_Nov from './reports/Analytics Monthly-610-2018-Nov.pdf'
+import Analytics_Monthly_610_2019_Jan from './reports/Analytics Monthly-610-2019-Jan.pdf'
+import Stairwell_Weekly_2018_Dec_10 from './reports/Stairwell Weekly 2018-Dec-10.pdf'
+import Stairwell_Weekly_2018_Dec_31 from './reports/Stairwell Weekly 2018-Dec-31.pdf'
+import Stairwell_Weekly_2018_Dec_24 from './reports/Stairwell Weekly 2018-Dec-24.pdf'
+import Stairwell_Weekly_2018_Dec_17 from './reports/Stairwell Weekly 2018-Dec-17.pdf'
+import Stairwell_Weekly_2019_Jan_07 from './reports/Stairwell Weekly 2019-Jan-07.pdf'
+import Unit_Motion_Weekly_2018_Dec_10 from './reports/Unit Motion Weekly 2018-Dec-10.pdf'
+import Unit_Motion_Weekly_2018_Dec_17 from './reports/Unit Motion Weekly 2018-Dec-17.pdf'
+import Unit_Motion_Weekly_2018_Dec_24 from './reports/Unit Motion Weekly 2018-Dec-24.pdf'
+import Unit_Motion_Weekly_2018_Dec_31 from './reports/Unit Motion Weekly 2018-Dec-31.pdf'
+import Unit_Motion_Weekly_2019_Jan_07 from './reports/Unit Motion Weekly 2019-Jan-07.pdf'
 
 
 const CustomTableCell = withStyles(theme => ({
@@ -71,9 +69,10 @@ class Reports extends React.Component {
   }
 
   render() {
-      const {classes} = this.props
+      const {classes, access} = this.props
 
     return (
+        !access ? 'No reports to show' :  
         <Paper className={classes.root}>
         <Typography variant="headline" component="h3" style={{paddingLeft: '10px'}}>
             REPORTS
@@ -93,85 +92,166 @@ class Reports extends React.Component {
                     <TableCell padding='none' style={{width: '90px'}}></TableCell>
                       < TableCell component="th" scope="row" padding="none">
                           <Typography variant="body1">
-                            PARC Stairwell Weekly 2018-Dec-31
+                            Stairwell Weekly 2019-Jan-07
                           </Typography>    
                       </ TableCell>
                       < CustomTableCell padding="none"></ CustomTableCell>
-                      < CustomTableCell padding="none"><a className={classes.link} href={parc_motion_stairwell_weekly} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Stairwell_Weekly_2019_Jan_07} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                            Stairwell Weekly 2018-Dec-31
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Stairwell_Weekly_2018_Dec_31} download=""><FileDownloadIcon/></a></ CustomTableCell>
                   </TableRow>
                   <TableRow hover className={classes.row}>
                   <TableCell padding='none' style={{width: '90px'}}></TableCell>
                       < TableCell component="th" scope="row" padding="none">
                           <Typography variant="body1">
-                          PARC Stairwell Weekly 2018-Dec-24
+                          Stairwell Weekly 2018-Dec-24
                           </Typography>    
                       </ TableCell>
                       < CustomTableCell padding="none"></ CustomTableCell>
-                      < CustomTableCell padding="none"><a className={classes.link} href={parc_motion_stairwell_weekly2} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Stairwell_Weekly_2018_Dec_24} download=""><FileDownloadIcon/></a></ CustomTableCell>
                   </TableRow>
                   <TableRow hover className={classes.row}>
                     <TableCell padding='none' style={{width: '90px'}}></TableCell>
                       < TableCell component="th" scope="row" padding="none">
                           <Typography variant="body1">
-                          PARC Stairwell Weekly 2018-Dec-17
+                          Stairwell Weekly 2018-Dec-17
                           </Typography>    
                       </ TableCell>
                       < CustomTableCell padding="none"></ CustomTableCell>
-                      < CustomTableCell padding="none"><a className={classes.link} href={parc_motion_stairwell_weekly3} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Stairwell_Weekly_2018_Dec_17} download=""><FileDownloadIcon/></a></ CustomTableCell>
                   </TableRow>
                   <TableRow hover className={classes.row}>
                     <TableCell padding='none' style={{width: '90px'}}></TableCell>
                       < TableCell component="th" scope="row" padding="none">
                           <Typography variant="body1">
-                          PARC Stairwell Weekly 2018-Dec-10
+                          Stairwell Weekly 2018-Dec-10
                           </Typography>    
                       </ TableCell>
                       < CustomTableCell padding="none"></ CustomTableCell>
-                      < CustomTableCell padding="none"><a className={classes.link} href={parc_motion_stairwell_weekly4} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Stairwell_Weekly_2018_Dec_10} download=""><FileDownloadIcon/></a></ CustomTableCell>
                   </TableRow>
                   <TableRow hover className={classes.row}>
                     <TableCell padding='none' style={{width: '90px'}}></TableCell>
                       < TableCell component="th" scope="row" padding="none">
                           <Typography variant="body1">
-                          PARC Unit Motion Weekly 2018-Dec-31 
+                          Unit Motion Weekly 2019-Jan-07 
                           </Typography>    
                       </ TableCell>
                       < CustomTableCell padding="none"></ CustomTableCell>
-                      < CustomTableCell padding="none"><a className={classes.link} href={parc_motion_unit_weekly} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Unit_Motion_Weekly_2019_Jan_07} download=""><FileDownloadIcon/></a></ CustomTableCell>
                   </TableRow>
                   <TableRow hover className={classes.row}>
                     <TableCell padding='none' style={{width: '90px'}}></TableCell>
                       < TableCell component="th" scope="row" padding="none">
                           <Typography variant="body1">
-                          PARC Unit Motion Weekly 2018-Dec-24
+                          Unit Motion Weekly 2018-Dec-31 
                           </Typography>    
                       </ TableCell>
                       < CustomTableCell padding="none"></ CustomTableCell>
-                      < CustomTableCell padding="none"><a className={classes.link} href={parc_motion_unit_weekly2} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Unit_Motion_Weekly_2018_Dec_31} download=""><FileDownloadIcon/></a></ CustomTableCell>
                   </TableRow>
                   <TableRow hover className={classes.row}>
                     <TableCell padding='none' style={{width: '90px'}}></TableCell>
                       < TableCell component="th" scope="row" padding="none">
                           <Typography variant="body1">
-                          PARC Unit Motion Weekly 2018-Dec-17
+                          Unit Motion Weekly 2018-Dec-24
                           </Typography>    
                       </ TableCell>
                       < CustomTableCell padding="none"></ CustomTableCell>
-                      < CustomTableCell padding="none"><a className={classes.link} href={parc_motion_unit_weekly3} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Unit_Motion_Weekly_2018_Dec_24} download=""><FileDownloadIcon/></a></ CustomTableCell>
                   </TableRow>
                   <TableRow hover className={classes.row}>
                     <TableCell padding='none' style={{width: '90px'}}></TableCell>
                       < TableCell component="th" scope="row" padding="none">
                           <Typography variant="body1">
-                          PARC Unit Motion Weekly 2018-Dec-10
+                            Unit Motion Weekly 2018-Dec-17
                           </Typography>    
                       </ TableCell>
                       < CustomTableCell padding="none"></ CustomTableCell>
-                      < CustomTableCell padding="none"><a className={classes.link} href={parc_motion_unit_weekly4} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Unit_Motion_Weekly_2018_Dec_17} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Unit Motion Weekly 2018-Dec-10
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Unit_Motion_Weekly_2018_Dec_10} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Analytics Monthly-610-2019-Jan
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Analytics_Monthly_610_2019_Jan} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Analytics Monthly-610-2018-Dec
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Analytics_Monthly_610_2018_Dec} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Analytics Monthly-610-2018-Nov
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Analytics_Monthly_610_2018_Nov} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Analytics Monthly-414-2019-Jan
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Analytics_Monthly_414_2019_Jan} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Analytics Monthly-414-2018-Dec
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Analytics_Monthly_414_2018_Dec} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Analytics Monthly-414-2018-Nov
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Analytics_Monthly_414_2018_Nov} download=""><FileDownloadIcon/></a></ CustomTableCell>
                   </TableRow>
               </TableBody>
           </Table>
           </Paper>
+          
     );
   }
 }

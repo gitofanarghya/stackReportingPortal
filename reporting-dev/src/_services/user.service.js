@@ -3,8 +3,23 @@ import { authHeader, history } from '../_helpers';
 export const userService = {
     login,
     logout,
-    register
+    register,
+    accessCheck
 };
+
+function accessCheck() {
+    const requestOptions = {
+        method: "GET",
+        mode: "cors",
+        cache: "no-cache",
+        credentials: "omit",
+        headers: authHeader(),
+        body: null
+    };
+
+    return fetch(`https://care-api-prod.appspot.com/communities`, requestOptions)
+        .then(handleResponse)
+}
 
 function login(username, password) {
     const requestOptions = {
