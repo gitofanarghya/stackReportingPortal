@@ -60,7 +60,7 @@ class LoginPage extends React.Component {
     render() {
         const { loggingIn, classes } = this.props;
         return ( loggingIn ? <Loading /> :
-            <div style={{height: '100%'}}>
+            <div style={{height: 'calc(100% - 64px)'}}>
             <AppBar className={classes.AppBar} position="static" color="secondary">
             <Toolbar>
             <Grid container justify="space-between" alignItems='center' style={{height: '64px'}}>
