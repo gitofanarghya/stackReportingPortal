@@ -13,19 +13,19 @@ const app = express();
 
 app.use(express.static(path.join(__dirname, 'build')));
 
+app.use(function(req, res, next) {
+  if(!req.secure) {
+    return res.redirect(['https://', req.get('Host'), req.baseUrl].join(''));
+  }
+  next();
+});
+
 app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 var httpsServer = https.createServer(credentials, app);
 var httpServer = http.createServer(app);
-
-httpServer.get('*', function(req, res) {  
-  res.redirect('https://portal.stack.care');
-
-  // Or, if you don't want to automatically detect the domain name from the request header, you can hard code it:
-  // res.redirect('https://example.com' + req.url);
-})
 
 httpServer.listen(80)
 httpsServer.listen(443);
