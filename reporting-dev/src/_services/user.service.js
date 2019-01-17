@@ -76,7 +76,8 @@ function handleResponse(response) {
                 logout();
                 window.location.reload(true);
             }
-
+            logout();
+            window.location.reload(true);
             const error = (data && data.message) || response.statusText;
             return Promise.reject(error);
         }
