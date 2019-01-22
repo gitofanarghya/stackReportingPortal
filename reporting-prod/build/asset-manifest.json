@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.03bf1080.css",
   "main.css.map": "static/css/main.03bf1080.css.map",
-  "main.js": "static/js/main.61f2b88c.js",
-  "main.js.map": "static/js/main.61f2b88c.js.map",
+  "main.js": "static/js/main.f507afec.js",
+  "main.js.map": "static/js/main.f507afec.js.map",
   "static\\media\\Analytics Monthly-414-2018-Dec.pdf": "static/media/Analytics Monthly-414-2018-Dec.e5cf3872.pdf",
   "static\\media\\Analytics Monthly-414-2018-Nov.pdf": "static/media/Analytics Monthly-414-2018-Nov.b19b638a.pdf",
   "static\\media\\Analytics Monthly-414-2019-Jan.pdf": "static/media/Analytics Monthly-414-2019-Jan.c6ae4cbb.pdf",
@@ -14,9 +14,11 @@
   "static\\media\\Stairwell Weekly 2018-Dec-24.pdf": "static/media/Stairwell Weekly 2018-Dec-24.1b3f00ef.pdf",
   "static\\media\\Stairwell Weekly 2018-Dec-31.pdf": "static/media/Stairwell Weekly 2018-Dec-31.ab715987.pdf",
   "static\\media\\Stairwell Weekly 2019-Jan-07.pdf": "static/media/Stairwell Weekly 2019-Jan-07.4f8aa11a.pdf",
+  "static\\media\\Stairwell Weekly 2019-Jan-14.pdf": "static/media/Stairwell Weekly 2019-Jan-14.ede385ba.pdf",
   "static\\media\\Unit Motion Weekly 2018-Dec-10.pdf": "static/media/Unit Motion Weekly 2018-Dec-10.c980ee51.pdf",
   "static\\media\\Unit Motion Weekly 2018-Dec-17.pdf": "static/media/Unit Motion Weekly 2018-Dec-17.07452b26.pdf",
   "static\\media\\Unit Motion Weekly 2018-Dec-24.pdf": "static/media/Unit Motion Weekly 2018-Dec-24.1e5a2676.pdf",
   "static\\media\\Unit Motion Weekly 2018-Dec-31.pdf": "static/media/Unit Motion Weekly 2018-Dec-31.cb56b7ed.pdf",
-  "static\\media\\Unit Motion Weekly 2019-Jan-07.pdf": "static/media/Unit Motion Weekly 2019-Jan-07.86586353.pdf"
+  "static\\media\\Unit Motion Weekly 2019-Jan-07.pdf": "static/media/Unit Motion Weekly 2019-Jan-07.86586353.pdf",
+  "static\\media\\Unit Motion Weekly 2019-Jan-14.pdf": "static/media/Unit Motion Weekly 2019-Jan-14.71a77a72.pdf"
 }
