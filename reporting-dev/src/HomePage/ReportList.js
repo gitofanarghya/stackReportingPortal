@@ -22,11 +22,13 @@ import Stairwell_Weekly_2018_Dec_31 from './reports/Stairwell Weekly 2018-Dec-31
 import Stairwell_Weekly_2018_Dec_24 from './reports/Stairwell Weekly 2018-Dec-24.pdf'
 import Stairwell_Weekly_2018_Dec_17 from './reports/Stairwell Weekly 2018-Dec-17.pdf'
 import Stairwell_Weekly_2019_Jan_07 from './reports/Stairwell Weekly 2019-Jan-07.pdf'
+import Stairwell_Weekly_2019_Jan_14 from './reports/Stairwell Weekly 2019-Jan-14.pdf'
 import Unit_Motion_Weekly_2018_Dec_10 from './reports/Unit Motion Weekly 2018-Dec-10.pdf'
 import Unit_Motion_Weekly_2018_Dec_17 from './reports/Unit Motion Weekly 2018-Dec-17.pdf'
 import Unit_Motion_Weekly_2018_Dec_24 from './reports/Unit Motion Weekly 2018-Dec-24.pdf'
 import Unit_Motion_Weekly_2018_Dec_31 from './reports/Unit Motion Weekly 2018-Dec-31.pdf'
 import Unit_Motion_Weekly_2019_Jan_07 from './reports/Unit Motion Weekly 2019-Jan-07.pdf'
+import Unit_Motion_Weekly_2019_Jan_14 from './reports/Unit Motion Weekly 2019-Jan-14.pdf'
 
 
 const CustomTableCell = withStyles(theme => ({
@@ -91,6 +93,16 @@ class Reports extends React.Component {
                     <TableCell padding='none' style={{width: '90px'}}></TableCell>
                       < TableCell component="th" scope="row" padding="none">
                           <Typography variant="body1">
+                            Stairwell Weekly 2019-Jan-14
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Stairwell_Weekly_2019_Jan_14} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
                             Stairwell Weekly 2019-Jan-07
                           </Typography>    
                       </ TableCell>
@@ -136,6 +148,16 @@ class Reports extends React.Component {
                       </ TableCell>
                       < CustomTableCell padding="none"></ CustomTableCell>
                       < CustomTableCell padding="none"><a className={classes.link} href={Stairwell_Weekly_2018_Dec_10} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Unit Motion Weekly 2019-Jan-14
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Unit_Motion_Weekly_2019_Jan_14} download=""><FileDownloadIcon/></a></ CustomTableCell>
                   </TableRow>
                   <TableRow hover className={classes.row}>
                     <TableCell padding='none' style={{width: '90px'}}></TableCell>
