@@ -83,7 +83,6 @@ class LoginPage extends React.Component {
                 <CardMedia
                     className={classes.media}
                     image="/img/logo.png"
-                    title="stack care logo"
                 />
                 <CardContent>
                     <form onSubmit={this.handleSubmit}>
