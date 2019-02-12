@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.03bf1080.css",
   "main.css.map": "static/css/main.03bf1080.css.map",
-  "main.js": "static/js/main.36fce27d.js",
-  "main.js.map": "static/js/main.36fce27d.js.map",
+  "main.js": "static/js/main.ad43acdb.js",
+  "main.js.map": "static/js/main.ad43acdb.js.map",
   "static\\media\\Analytics Monthly-414-2018-Dec.pdf": "static/media/Analytics Monthly-414-2018-Dec.e5cf3872.pdf",
   "static\\media\\Analytics Monthly-414-2018-Nov.pdf": "static/media/Analytics Monthly-414-2018-Nov.b19b638a.pdf",
   "static\\media\\Analytics Monthly-414-2019-Jan.pdf": "static/media/Analytics Monthly-414-2019-Jan.c6ae4cbb.pdf",
@@ -13,6 +13,7 @@
   "static\\media\\Stairwell Weekly 2018-Dec-17.pdf": "static/media/Stairwell Weekly 2018-Dec-17.1e432df2.pdf",
   "static\\media\\Stairwell Weekly 2018-Dec-24.pdf": "static/media/Stairwell Weekly 2018-Dec-24.1b3f00ef.pdf",
   "static\\media\\Stairwell Weekly 2018-Dec-31.pdf": "static/media/Stairwell Weekly 2018-Dec-31.ab715987.pdf",
+  "static\\media\\Stairwell Weekly 2019-Feb-04.pdf": "static/media/Stairwell Weekly 2019-Feb-04.c8805975.pdf",
   "static\\media\\Stairwell Weekly 2019-Jan-07.pdf": "static/media/Stairwell Weekly 2019-Jan-07.4f8aa11a.pdf",
   "static\\media\\Stairwell Weekly 2019-Jan-14.pdf": "static/media/Stairwell Weekly 2019-Jan-14.ede385ba.pdf",
   "static\\media\\Stairwell Weekly 2019-Jan-21.pdf": "static/media/Stairwell Weekly 2019-Jan-21.669b1232.pdf",
@@ -24,5 +25,14 @@
   "static\\media\\Unit Motion Weekly 2019-Jan-07.pdf": "static/media/Unit Motion Weekly 2019-Jan-07.86586353.pdf",
   "static\\media\\Unit Motion Weekly 2019-Jan-14.pdf": "static/media/Unit Motion Weekly 2019-Jan-14.71a77a72.pdf",
   "static\\media\\Unit Motion Weekly 2019-Jan-21.pdf": "static/media/Unit Motion Weekly 2019-Jan-21.c7266ecc.pdf",
-  "static\\media\\Unit Motion Weekly 2019-Jan-28.pdf": "static/media/Unit Motion Weekly 2019-Jan-28.63009574.pdf"
+  "static\\media\\Unit Motion Weekly 2019-Jan-28.pdf": "static/media/Unit Motion Weekly 2019-Jan-28.63009574.pdf",
+  "static\\media\\Unit Motion Weekly Apt 219 2019-Feb-04.pdf": "static/media/Unit Motion Weekly Apt 219 2019-Feb-04.b62bc994.pdf",
+  "static\\media\\Unit Motion Weekly Apt 223 2019-Feb-04.pdf": "static/media/Unit Motion Weekly Apt 223 2019-Feb-04.3048a911.pdf",
+  "static\\media\\Unit Motion Weekly Apt 305 2019-Feb-04.pdf": "static/media/Unit Motion Weekly Apt 305 2019-Feb-04.7ca71242.pdf",
+  "static\\media\\Unit Motion Weekly Apt 312 2019-Feb-04.pdf": "static/media/Unit Motion Weekly Apt 312 2019-Feb-04.03c7232e.pdf",
+  "static\\media\\Unit Motion Weekly Apt 409 2019-Feb-04.pdf": "static/media/Unit Motion Weekly Apt 409 2019-Feb-04.3e846525.pdf",
+  "static\\media\\Unit Motion Weekly Apt 414 2019-Feb-04.pdf": "static/media/Unit Motion Weekly Apt 414 2019-Feb-04.5757d545.pdf",
+  "static\\media\\Unit Motion Weekly Apt 422 2019-Feb-04.pdf": "static/media/Unit Motion Weekly Apt 422 2019-Feb-04.5b60cd14.pdf",
+  "static\\media\\Unit Motion Weekly Apt 505 2019-Feb-04.pdf": "static/media/Unit Motion Weekly Apt 505 2019-Feb-04.cd66a943.pdf",
+  "static\\media\\Unit Motion Weekly Apt 610 2019-Feb-04.pdf": "static/media/Unit Motion Weekly Apt 610 2019-Feb-04.46cb92a4.pdf"
 }
