@@ -305,6 +305,16 @@ class Reports extends React.Component {
                     <TableCell padding='none' style={{width: '90px'}}></TableCell>
                       < TableCell component="th" scope="row" padding="none">
                           <Typography variant="body1">
+                            Stairwell Weekly 2019-Feb-11
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Stairwell_Weekly_2019_Feb_11} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
                             Unit Motion Weekly Apt 219 2019-Feb-04
                           </Typography>    
                       </ TableCell>
@@ -390,16 +400,6 @@ class Reports extends React.Component {
                       </ TableCell>
                       < CustomTableCell padding="none"></ CustomTableCell>
                       < CustomTableCell padding="none"><a className={classes.link} href={Unit_Motion_Weekly_610_2019_Feb_04} download=""><FileDownloadIcon/></a></ CustomTableCell>
-                  </TableRow>
-                  <TableRow hover className={classes.row}>
-                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
-                      < TableCell component="th" scope="row" padding="none">
-                          <Typography variant="body1">
-                            Stairwell Weekly 2019-Feb-11
-                          </Typography>    
-                      </ TableCell>
-                      < CustomTableCell padding="none"></ CustomTableCell>
-                      < CustomTableCell padding="none"><a className={classes.link} href={Stairwell_Weekly_2019_Feb_11} download=""><FileDownloadIcon/></a></ CustomTableCell>
                   </TableRow>
                   <TableRow hover className={classes.row}>
                     <TableCell padding='none' style={{width: '90px'}}></TableCell>
