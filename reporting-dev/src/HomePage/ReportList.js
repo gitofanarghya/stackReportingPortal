@@ -53,6 +53,16 @@ import Unit_Motion_Weekly_414_2019_Feb_11 from './reports/Unit Motion Weekly Apt
 import Unit_Motion_Weekly_422_2019_Feb_11 from './reports/Unit Motion Weekly Apt 422 2019-Feb-11.pdf'
 import Unit_Motion_Weekly_505_2019_Feb_11 from './reports/Unit Motion Weekly Apt 505 2019-Feb-11.pdf'
 import Unit_Motion_Weekly_610_2019_Feb_11 from './reports/Unit Motion Weekly Apt 610 2019-Feb-11.pdf'
+import Stairwell_Weekly_2019_Feb_18 from './reports/Stairwell Weekly 2019-Feb-18.pdf'
+import Unit_Motion_Weekly_219_2019_Feb_18 from './reports/Unit Motion Weekly Apt 219 2019-Feb-18.pdf'
+import Unit_Motion_Weekly_223_2019_Feb_18 from './reports/Unit Motion Weekly Apt 223 2019-Feb-18.pdf'
+import Unit_Motion_Weekly_305_2019_Feb_18 from './reports/Unit Motion Weekly Apt 305 2019-Feb-18.pdf'
+import Unit_Motion_Weekly_312_2019_Feb_18 from './reports/Unit Motion Weekly Apt 312 2019-Feb-18.pdf'
+import Unit_Motion_Weekly_409_2019_Feb_18 from './reports/Unit Motion Weekly Apt 409 2019-Feb-18.pdf'
+import Unit_Motion_Weekly_414_2019_Feb_18 from './reports/Unit Motion Weekly Apt 414 2019-Feb-18.pdf'
+import Unit_Motion_Weekly_422_2019_Feb_18 from './reports/Unit Motion Weekly Apt 422 2019-Feb-18.pdf'
+import Unit_Motion_Weekly_505_2019_Feb_18 from './reports/Unit Motion Weekly Apt 505 2019-Feb-18.pdf'
+import Unit_Motion_Weekly_610_2019_Feb_18 from './reports/Unit Motion Weekly Apt 610 2019-Feb-18.pdf'
 import Analytics_Apt_219_2018_Dec_31_to_2019_Feb_09 from './reports/Analytics Apt 219 2018-Dec-31 to 2019-Feb-09.pdf'
 import Analytics_Apt_223_2018_Dec_31_to_2019_Feb_09 from './reports/Analytics Apt 223 2018-Dec-31 to 2019-Feb-09.pdf'
 import Analytics_Apt_305_2018_Dec_31_to_2019_Feb_09 from './reports/Analytics Apt 305 2018-Dec-31 to 2019-Feb-09.pdf'
@@ -62,6 +72,7 @@ import Analytics_Apt_414_2018_Dec_31_to_2019_Feb_09 from './reports/Analytics Ap
 import Analytics_Apt_422_2018_Dec_31_to_2019_Feb_09 from './reports/Analytics Apt 422 2018-Dec-31 to 2019-Feb-09.pdf'
 import Analytics_Apt_505_2018_Dec_31_to_2019_Feb_09 from './reports/Analytics Apt 505 2018-Dec-31 to 2019-Feb-09.pdf'
 import Analytics_Apt_610_2018_Dec_31_to_2019_Feb_09 from './reports/Analytics Apt 610 2018-Dec-31 to 2019-Feb-09.pdf'
+
 
 const CustomTableCell = withStyles(theme => ({
     head: {
@@ -121,6 +132,106 @@ class Reports extends React.Component {
               </TableRow>
               </TableHead>
               <TableBody>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                            Unit Motion Weekly Apt 219 2019-Feb-18
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Unit_Motion_Weekly_219_2019_Feb_18} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Unit Motion Weekly Apt 223 2019-Feb-18
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Unit_Motion_Weekly_223_2019_Feb_18} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Unit Motion Weekly Apt 305 2019-Feb-18
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Unit_Motion_Weekly_305_2019_Feb_18} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Unit Motion Weekly Apt 312 2019-Feb-18
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Unit_Motion_Weekly_312_2019_Feb_18} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Unit Motion Weekly Apt 409 2019-Feb-18
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Unit_Motion_Weekly_409_2019_Feb_18} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Unit Motion Weekly Apt 414 2019-Feb-18
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Unit_Motion_Weekly_414_2019_Feb_18} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Unit Motion Weekly Apt 422 2019-Feb-18
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Unit_Motion_Weekly_422_2019_Feb_18} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Unit Motion Weekly Apt 505 2019-Feb-18
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Unit_Motion_Weekly_505_2019_Feb_18} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Unit Motion Weekly Apt 610 2019-Feb-18
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Unit_Motion_Weekly_610_2019_Feb_18} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                            Stairwell Weekly 2019-Feb-18
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={Stairwell_Weekly_2019_Feb_18} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
                   <TableRow hover className={classes.row}>
                     <TableCell padding='none' style={{width: '90px'}}></TableCell>
                       < TableCell component="th" scope="row" padding="none">
