@@ -55,6 +55,11 @@ export function authentication(state, action) {
         refreshing: false,
         checkingAccess: false
       }
+    case 'accessToggle':
+      return {
+        ...state,
+        access: action.bool
+      }
     default:
       return state
   }

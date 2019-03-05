@@ -22,26 +22,37 @@ const customStyles = {
   }),
   singleValue: (base, state) => ({
     ...base, 
-    color: "white",
+    color: "black",
     border: "none",
   })
 }
 
 class IntegrationReactSelect extends Component {
 
+  state = {
+    name: 'PARC Westerleigh'
+  }
 
   handleChange = value => {
     if(value) {
-        this.props.setCommunity(value.value)  
+      value.value === '1' ? this.props.setCommunity(true) : this.props.setCommunity(false)
     }
+    this.setState({
+      name: value.label
+    })
   };
   
   render() {
+    console.log(this.state)
     const { classes } = this.props;
 
     const allCommunities = [{
         id: '1',
         name: 'PARC Westerleigh'
+    },
+    {
+      id: '2',
+      name: 'PARC Oceana'
     }]
 
     const suggestions = allCommunities ? allCommunities.map(suggestion => ({
@@ -51,12 +62,11 @@ class IntegrationReactSelect extends Component {
 
     return (
       <div className={classes.root}>
+
         <NoSsr>
           <Select
             className="searchBar"
-            isClearable
-            isSearchable
-            placeholder="PARC Westerleigh"
+            placeholder={this.state.name}
             options={suggestions}
             styles={customStyles}
             onChange={this.handleChange}

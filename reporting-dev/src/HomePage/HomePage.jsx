@@ -28,7 +28,7 @@ class HomePage extends React.Component {
                 <Grid container justify="flex-start">
                     <Grid container item xs={12} justify="space-around" style={{height: '100px'}}>
                         <Grid item xs={11} sm={10} md={8} lg={6} style={{margin: 'auto'}}>
-                            { this.props.access && <SearchBar allCommunities={allCommunities} setCommunity={this.props.setCommunity} /> }
+                            <SearchBar allCommunities={allCommunities} setCommunity={this.props.setCommunity} />
                         </Grid>
                     </Grid>
                     <Grid container item xs={12} direction='row' justify='space-around'>
@@ -55,6 +55,9 @@ const mapDispatchToProps = (dispatch) => ({
     accessCheck: () => {
         dispatch(userActions.accessCheck())
     },
+    setCommunity: (bool) => {
+        dispatch({ type: 'accessToggle', bool })
+    }
 })
 
 const connectedHomePage = connect(mapStateToProps, mapDispatchToProps)(HomePage);
