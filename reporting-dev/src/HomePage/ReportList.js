@@ -82,6 +82,24 @@ import g from './reports/MotionData_Parc_Westerleigh_Apt422_2019-02-25_2019-03-0
 import h from './reports/MotionData_Parc_Westerleigh_Apt505_2019-02-25_2019-03-03.pdf'
 import i from './reports/MotionData_Parc_Westerleigh_Apt610_2019-02-25_2019-03-03.pdf'
 import j from './reports/Stairwell_Motion_Parc_Westerleigh_Stairwell_2019-02-25_2019-03-03.pdf'
+import hh  from './reports/Analytics_Westerleigh_apt_219_2019Feb01_2019Feb28.pdf'
+import ii  from './reports/Analytics_Westerleigh_apt_219_2019Jan01_2019Jan31.pdf'
+import jj  from './reports/Analytics_Westerleigh_apt_223_2019Feb01_2019Feb28.pdf'
+import k  from './reports/Analytics_Westerleigh_apt_223_2019Jan01_2019Jan31.pdf'
+import l  from './reports/Analytics_Westerleigh_apt_305_2019Feb01_2019Feb28.pdf'
+import m  from './reports/Analytics_Westerleigh_apt_305_2019Jan01_2019Jan31.pdf'
+import n  from './reports/Analytics_Westerleigh_apt_312_2019Feb01_2019Feb28.pdf'
+import o  from './reports/Analytics_Westerleigh_apt_312_2019Jan01_2019Jan31.pdf'
+import p  from './reports/Analytics_Westerleigh_apt_409_2019Feb01_2019Feb28.pdf'
+import q  from './reports/Analytics_Westerleigh_apt_409_2019Jan01_2019Jan31.pdf'
+import r  from './reports/Analytics_Westerleigh_apt_414_2019Feb01_2019Feb28.pdf'
+import s  from './reports/Analytics_Westerleigh_apt_414_2019Jan01_2019Jan31.pdf'
+import t  from './reports/Analytics_Westerleigh_apt_422_2019Feb01_2019Feb28.pdf'
+import u  from './reports/Analytics_Westerleigh_apt_422_2019Jan01_2019Jan31.pdf'
+import v  from './reports/Analytics_Westerleigh_apt_505_2019Feb01_2019Feb28.pdf'
+import w  from './reports/Analytics_Westerleigh_apt_505_2019Jan01_2019Jan31.pdf'
+import x  from './reports/Analytics_Westerleigh_apt_610_2019Feb01_2019Feb28.pdf'
+import y  from './reports/Analytics_Westerleigh_apt_610_2019Jan01_2019Jan31.pdf'
 
 
 const CustomTableCell = withStyles(theme => ({
@@ -142,6 +160,186 @@ class Reports extends React.Component {
               </TableRow>
               </TableHead>
               <TableBody>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Analytics Apt 219 2018-Jan-01 to 2019-Jan-31
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={ii} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Analytics Apt 219 2018-Feb-01 to 2019-Feb-28
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={hh} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Analytics Apt 223 2018-Jan-01 to 2019-Jan-31
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={k} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Analytics Apt 223 2018-Feb-01 to 2019-Feb-28
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={jj} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Analytics Apt 305 2018-Jan-01 to 2019-Jan-31
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={m} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Analytics Apt 305 2018-Feb-01 to 2019-Feb-28
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={l} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Analytics Apt 312 2018-Jan-01 to 2019-Jan-31
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={o} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Analytics Apt 312 2018-Feb-01 to 2019-Feb-28
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={n} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Analytics Apt 409 2018-Jan-01 to 2019-Jan-31
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={q} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Analytics Apt 409 2018-Feb-01 to 2019-Feb-28
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={p} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Analytics Apt 414 2018-Jan-01 to 2019-Jan-31
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={s} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Analytics Apt 414 2018-Feb-01 to 2019-Feb-28
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={r} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Analytics Apt 422 2018-Jan-01 to 2019-Jan-31
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={u} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Analytics Apt 422 2018-Feb-01 to 2019-Feb-28
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={t} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Analytics Apt 505 2018-Jan-01 to 2019-Jan-31
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={w} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Analytics Apt 505 2018-Feb-01 to 2019-Feb-28
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={v} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Analytics Apt 610 2018-Jan-01 to 2019-Jan-31
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={y} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Analytics Apt 610 2018-Feb-01 to 2019-Feb-28
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={x} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
                   <TableRow hover className={classes.row}>
                     <TableCell padding='none' style={{width: '90px'}}></TableCell>
                       < TableCell component="th" scope="row" padding="none">
