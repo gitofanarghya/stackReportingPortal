@@ -100,6 +100,16 @@ import v  from './reports/Analytics_Westerleigh_apt_505_2019Feb01_2019Feb28.pdf'
 import w  from './reports/Analytics_Westerleigh_apt_505_2019Jan01_2019Jan31.pdf'
 import x  from './reports/Analytics_Westerleigh_apt_610_2019Feb01_2019Feb28.pdf'
 import y  from './reports/Analytics_Westerleigh_apt_610_2019Jan01_2019Jan31.pdf'
+import a1  from './reports/MotionData_Parc_Westerleigh_Apt219_2019-03-04_2019-03-10.pdf'
+import b1  from './reports/MotionData_Parc_Westerleigh_Apt223_2019-03-04_2019-03-10.pdf'
+import c1  from './reports/MotionData_Parc_Westerleigh_Apt305_2019-03-04_2019-03-10.pdf'
+import d1  from './reports/MotionData_Parc_Westerleigh_Apt312_2019-03-04_2019-03-10.pdf'
+import e1  from './reports/MotionData_Parc_Westerleigh_Apt409_2019-03-04_2019-03-10.pdf'
+import f1  from './reports/MotionData_Parc_Westerleigh_Apt414_2019-03-04_2019-03-10.pdf'
+import g1  from './reports/MotionData_Parc_Westerleigh_Apt422_2019-03-04_2019-03-10.pdf'
+import h1  from './reports/MotionData_Parc_Westerleigh_Apt505_2019-03-04_2019-03-10.pdf'
+import i1  from './reports/MotionData_Parc_Westerleigh_Apt610_2019-03-04_2019-03-10.pdf'
+import j1 from './reports/Stairwell_Motion_Parc_Westerleigh_Stairwell_2019-03-04_2019-03-10.pdf'
 
 
 const CustomTableCell = withStyles(theme => ({
@@ -160,6 +170,106 @@ class Reports extends React.Component {
               </TableRow>
               </TableHead>
               <TableBody>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                            Unit Motion Weekly Apt 219 2019-Mar-04
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={a1} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Unit Motion Weekly Apt 223 2019-Mar-04
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={b1} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Unit Motion Weekly Apt 305 2019-Mar-04
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={c1} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Unit Motion Weekly Apt 312 2019-Mar-04
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={d1} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Unit Motion Weekly Apt 409 2019-Mar-04
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={e1} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Unit Motion Weekly Apt 414 2019-Mar-04
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={f1} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Unit Motion Weekly Apt 422 2019-Mar-04
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={g1} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Unit Motion Weekly Apt 505 2019-Mar-04
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={h1} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                          Unit Motion Weekly Apt 610 2019-Mar-04
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={i1} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
+                  <TableRow hover className={classes.row}>
+                    <TableCell padding='none' style={{width: '90px'}}></TableCell>
+                      < TableCell component="th" scope="row" padding="none">
+                          <Typography variant="body1">
+                            Stairwell Weekly 2019-Mar-04
+                          </Typography>    
+                      </ TableCell>
+                      < CustomTableCell padding="none"></ CustomTableCell>
+                      < CustomTableCell padding="none"><a className={classes.link} href={j1} download=""><FileDownloadIcon/></a></ CustomTableCell>
+                  </TableRow>
                   <TableRow hover className={classes.row}>
                     <TableCell padding='none' style={{width: '90px'}}></TableCell>
                       < TableCell component="th" scope="row" padding="none">
